@@ -1,0 +1,236 @@
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #1b1b2f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #4f7cff, #6a11cb);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero-btn:hover {
+    background: #ff4f41;
+    transform: scale(1.05);
+}
+
+
+.hero button {
+    padding: 15px 35px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero button:hover {
+    background: #ff4f41;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1b1b2f;
+}
+
+/* SERVICES */
+#services ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+#services li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+#services li::before {
+    content: "?";
+    position: absolute;
+    left: 0;
+    color: #ff6f61;
+}
+
+/* PRODUCTS */
+#products {
+    background: #fefefe;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #1b1b2f;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4f7cff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.product button:hover {
+    background: #365fd1;
+    transform: scale(1.05);
+}
+/* Order Form Section */
+#order-form {
+    padding: 50px 20px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+#order-form h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1b1b2f;
+}
+
+#order-form iframe {
+    max-width: 700px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* CONTACT */
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+    background: #1b1b2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
